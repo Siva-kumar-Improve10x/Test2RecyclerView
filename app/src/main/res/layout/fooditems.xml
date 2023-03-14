@@ -3,16 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="4dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/deliveryStatus_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -31,14 +33,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/minGreen_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
@@ -46,7 +41,7 @@
         android:textColor="#17631A" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/food_iv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -58,14 +53,14 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/userName_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/rating_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
@@ -78,7 +73,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/location_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"

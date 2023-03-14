@@ -1,6 +1,7 @@
 package com.improve10x.test2recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 public class FoodDeliveryActivity extends AppCompatActivity {
     public Food_items[] food_items;
     RecyclerView foodItemsRv;
+    FoodDeliveryAdapter adapter;
 
 
     @Override
@@ -16,7 +18,18 @@ public class FoodDeliveryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food_delivery);
         initViews();
         addData();
+        setUpAdapter();
+        connectAdapter();
 
+    }
+
+    private void connectAdapter() {
+        foodItemsRv.setLayoutManager(new LinearLayoutManager(this));
+        foodItemsRv.setAdapter(adapter);
+    }
+
+    private void setUpAdapter() {
+        adapter = new FoodDeliveryAdapter(food_items);
     }
 
     private void addData() {
@@ -24,6 +37,7 @@ public class FoodDeliveryActivity extends AppCompatActivity {
         Food_items items = new Food_items();
         items.deliveryStatus = "DELIVERY ON TUESDAY 01";
         items.userName = "B's Balkans H...";
+        items.image = "";
         items.location = "ARABIC,INTERNATIONAL";
         items.DeliveryTime = "USUALLY REPLIES ";
         items.rating = "4.8";
@@ -32,6 +46,7 @@ public class FoodDeliveryActivity extends AppCompatActivity {
 
         Food_items items1 = new Food_items();
         items1.deliveryStatus = "DELIVERY ON MONDAY 31";
+        items1.image = "";
         items1.userName = "Syriana";
         items1.location = "SYRIAN ARABIC";
         items1.DeliveryTime = "USUALLY ARPLES WITHIN ";
@@ -41,6 +56,7 @@ public class FoodDeliveryActivity extends AppCompatActivity {
 
         Food_items items2 = new Food_items();
         items2.deliveryStatus = "DELIVERY ON TUESDAY 01";
+        items2.image = "";
         items2.userName = "B's Balkans H...";
         items2.location = "ARABIC INTERNATIONAL";
         items2.DeliveryTime = "USUALLY REPLES WITHIN 12min";

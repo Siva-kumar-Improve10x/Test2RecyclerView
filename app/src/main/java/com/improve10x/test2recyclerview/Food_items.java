@@ -7,5 +7,7 @@ public class Food_items {
     public String DeliveryTime;
     public String rating;
     public String minGreen;
+    public String food;
+    public String image;
 
 }
