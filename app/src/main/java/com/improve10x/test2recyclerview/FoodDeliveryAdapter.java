@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 public class FoodDeliveryAdapter extends RecyclerView.Adapter<FoodRv> {
-    public Food_items[] items;
-    public  FoodDeliveryAdapter(Food_items[] food_items){
-        items = food_items;
+    public Fooditems[] items;
+    public  FoodDeliveryAdapter(Fooditems[] foodItems){
+        items = foodItems;
     }
     @NonNull
     @Override
@@ -25,13 +25,13 @@ public class FoodDeliveryAdapter extends RecyclerView.Adapter<FoodRv> {
 
     @Override
     public void onBindViewHolder(@NonNull FoodRv holder, int position) {
-        Food_items food_items = items[position];
-        holder.deliveryStatus.setText(food_items.deliveryStatus);
-        holder.DeliveryTime.setText(food_items.DeliveryTime);
-        holder.rating.setText(food_items.rating);
-        holder.userName.setText(food_items.userName);
-        holder.location.setText(food_items.location);
-        Picasso.get().load(food_items.food).into(holder.food);
+        Fooditems fooditems = items[position];
+        holder.deliveryStatusTxt.setText(fooditems.deliveryStatus);
+        holder.DeliveryTimeTxt.setText(fooditems.DeliveryTime);
+        holder.ratingTxt.setText(fooditems.rating);
+        holder.userNameTxt.setText(fooditems.userName);
+        holder.locationTxt.setText(fooditems.location);
+        Picasso.get().load(fooditems.food).into(holder.foodIv);
 
 
     }

@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 public class FoodDeliveryActivity extends AppCompatActivity {
-    public Food_items[] food_items;
+    public Fooditems[] foodItems;
     RecyclerView foodItemsRv;
     FoodDeliveryAdapter adapter;
 
@@ -29,40 +29,40 @@ public class FoodDeliveryActivity extends AppCompatActivity {
     }
 
     private void setUpAdapter() {
-        adapter = new FoodDeliveryAdapter(food_items);
+        adapter = new FoodDeliveryAdapter(foodItems);
     }
 
     private void addData() {
-        food_items = new Food_items[4];
-        Food_items items = new Food_items();
+        foodItems = new Fooditems[3];
+        Fooditems items = new Fooditems();
         items.deliveryStatus = "DELIVERY ON TUESDAY 01";
         items.userName = "B's Balkans H...";
-        items.image = "";
+        items.food = "https://b.zmtcdn.com/data/pictures/chains/5/19721465/d9de2792f8b74bda5d9d55ba3201ed9e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*";
         items.location = "ARABIC,INTERNATIONAL";
         items.DeliveryTime = "USUALLY REPLIES ";
         items.rating = "4.8";
         items.minGreen = "12 Min";
-        food_items[0] = items;
+        foodItems[0] = items;
 
-        Food_items items1 = new Food_items();
+        Fooditems items1 = new Fooditems();
         items1.deliveryStatus = "DELIVERY ON MONDAY 31";
-        items1.image = "";
+        items1.food = "https://b.zmtcdn.com/data/pictures/chains/5/19721465/d9de2792f8b74bda5d9d55ba3201ed9e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*";
         items1.userName = "Syriana";
         items1.location = "SYRIAN ARABIC";
         items1.DeliveryTime = "USUALLY ARPLES WITHIN ";
         items1.rating = "4.3";
         items1.minGreen = "23 Min";
-        food_items[1] = items1;
+        foodItems[1] = items1;
 
-        Food_items items2 = new Food_items();
+        Fooditems items2 = new Fooditems();
         items2.deliveryStatus = "DELIVERY ON TUESDAY 01";
-        items2.image = "";
+        items2.food = "https://b.zmtcdn.com/data/pictures/chains/5/19721465/d9de2792f8b74bda5d9d55ba3201ed9e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*";
         items2.userName = "B's Balkans H...";
         items2.location = "ARABIC INTERNATIONAL";
         items2.DeliveryTime = "USUALLY REPLES WITHIN 12min";
         items2.rating = "4.8";
         items2.minGreen = "12 Min";
-        food_items[2] = items2;
+        foodItems[2] = items2;
 
     }
 
