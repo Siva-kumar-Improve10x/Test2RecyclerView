@@ -8,20 +8,22 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class FoodRv extends RecyclerView.ViewHolder {
+    public ImageView userUrlIv;
     public TextView deliveryStatusTxt;
     public TextView userNameTxt;
-    public TextView locationTxt;
+    public TextView userlocationTxt;
     public TextView DeliveryTimeTxt;
     public TextView ratingTxt;
-    public ImageView foodIv;
+    public ImageView foodPicIv;
 
     public FoodRv(@NonNull View itemView) {
         super(itemView);
-        deliveryStatusTxt = itemView.findViewById(R.id.deliveryStatus_txt);
-        userNameTxt = itemView.findViewById(R.id.userName_txt);
-        locationTxt = itemView.findViewById(R.id.location_txt);
-        DeliveryTimeTxt = itemView.findViewById(R.id.minGreen_txt);
+        deliveryStatusTxt = itemView.findViewById(R.id.deliverystatus_txt);
+        userNameTxt = itemView.findViewById(R.id.user_txt);
+        userlocationTxt = itemView.findViewById(R.id.userlocation_txt);
+        DeliveryTimeTxt = itemView.findViewById(R.id.deliverytime_txt);
         ratingTxt = itemView.findViewById(R.id.rating_txt);
-        foodIv = itemView.findViewById(R.id.food_iv);
+        foodPicIv = itemView.findViewById(R.id.biriyani_iv);
+        userUrlIv = itemView.findViewById(R.id.user_iv);
     }
 }

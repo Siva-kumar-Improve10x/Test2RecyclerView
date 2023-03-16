@@ -18,7 +18,7 @@ public class FoodDeliveryAdapter extends RecyclerView.Adapter<FoodRv> {
     @Override
     public FoodRv onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.fooditems,parent,false);
+        View view = inflater.inflate(R.layout.relative_pratice,parent,false);
         FoodRv foodRv = new FoodRv(view);
         return foodRv;
     }
@@ -26,12 +26,14 @@ public class FoodDeliveryAdapter extends RecyclerView.Adapter<FoodRv> {
     @Override
     public void onBindViewHolder(@NonNull FoodRv holder, int position) {
         Fooditems fooditems = items[position];
+        Picasso.get().load(fooditems.foodUrl).into(holder.foodPicIv);
         holder.deliveryStatusTxt.setText(fooditems.deliveryStatus);
+        Picasso.get().load(fooditems.userUrl).into(holder.userUrlIv);
+        holder.userNameTxt.setText(fooditems.userName);
+        holder.userlocationTxt.setText(fooditems.userLocation);
         holder.DeliveryTimeTxt.setText(fooditems.DeliveryTime);
         holder.ratingTxt.setText(fooditems.rating);
-        holder.userNameTxt.setText(fooditems.userName);
-        holder.locationTxt.setText(fooditems.location);
-        Picasso.get().load(fooditems.food).into(holder.foodIv);
+
 
 
     }

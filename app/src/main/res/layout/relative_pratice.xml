@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/biriyani_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/biriyani_iv"
+        android:layout_alignTop="@id/biriyani_iv"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="16dp"
+        android:background="#CFC3C3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  🛵 "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Delivery on "
+            android:textAllCaps="true"
+            android:textColor="#171616" />
+
+        <TextView
+            android:id="@+id/deliverystatus_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" TUESDAY 01"
+            android:textAllCaps="false"
+            android:textColor="#EA0A0A"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/biriyani_iv"
+        android:layout_alignRight="@id/biriyani_iv"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#9F191616"
+        app:srcCompat="@drawable/ic_twotone_favorite_24" />
+
+    <LinearLayout
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:layout_alignLeft="@id/biriyani_iv"
+        android:layout_alignBottom="@id/biriyani_iv"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="12dp"
+        android:background="#B2191616">
+
+        <ImageView
+            android:id="@+id/user_iv"
+            android:layout_width="61dp"
+            android:layout_height="60dp"
+            tools:srcCompat="@drawable/img_2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Syriana"
+                android:textColor="#F6F0F0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/userlocation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="SYRIAN ARABIC"
+                android:textColor="#B3A8A8"
+                android:textSize="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twocomponent_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/biriyani_iv"
+        android:layout_alignBottom="@id/biriyani_iv"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="20dp"
+        android:background="#B2191616"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_round_star_24" />
+
+        <TextView
+            android:id="@+id/rating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="4dp"
+            android:text="4.8"
+            android:textColor="#E6DDDD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/biriyani_iv"
+        android:layout_alignRight="@id/biriyani_iv"
+        android:layout_alignBottom="@id/twocomponent_ll"
+        android:layout_marginTop="131dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="36dp"
+        android:background="#B2191616"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  USUALLY PEPLIES WITHIN"
+            android:textColor="#F6EEEE"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/deliverytime_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23min"
+            android:textColor="#05D10D" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -14,8 +14,6 @@ public class DeliveryAdpater extends RecyclerView.Adapter<DeliveryViewHolderRv> 
     public DeliveryAdpater(DeliveryItems[] deliveryItems){
         delivery = deliveryItems;
     }
-
-
     @NonNull
     @Override
     public DeliveryViewHolderRv onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
